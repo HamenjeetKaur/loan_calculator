@@ -74,6 +74,7 @@
 
 <div class="container mt-5" th:if="${payments != null}">
   <h2 class="text-center">Loan Payment Schedule</h2>
+  <a href="/download" class="btn btn-success mb-3">Download</a>
   <table class="table table-bordered mt-4">
     <thead>
     <tr>
@@ -89,7 +90,7 @@
     <tr th:each="payment : ${payments}">
       <td th:text="${payment.month}"></td>
       <td th:text="${payment.amountOwed}"></td>
-      <td th:text="${payment.paymentNeeded}"></td>
+      <td th:text="${payment.monthlyPayment}"></td>
       <td th:text="${payment.interest}"></td>
       <td th:text="${payment.principal}"></td>
       <td th:text="${payment.endingBalance}"></td>

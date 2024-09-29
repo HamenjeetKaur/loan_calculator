@@ -4,15 +4,15 @@ public class calculation {
 
     private int month;
     private double amountOwed;
-    private double paymentNeeded;
+    private double monthlyPayment;
     private double interest;
     private double principal;
     private double endingBalance;
 
-    public calculation(int month, double amountOwed, double principal, double interest, double endingBalance) {
+    public calculation(int month, double amountOwed, double monthlyPayment, double principal, double interest, double endingBalance) {
         this.month=month;
         this.amountOwed = amountOwed;
-        this.paymentNeeded = principal + interest; // Adjust as needed
+        this.monthlyPayment = monthlyPayment;
         this.interest = interest;
         this.principal = principal;
         this.endingBalance = endingBalance;
@@ -34,12 +34,12 @@ public class calculation {
         this.amountOwed = amountOwed;
     }
 
-    public double getPaymentNeeded() {
-        return paymentNeeded;
+    public double getMonthlyPayment() {
+        return monthlyPayment;
     }
 
-    public void setPaymentNeeded(double paymentNeeded) {
-        this.paymentNeeded = paymentNeeded;
+    public void setMonthlyPayment(double monthlyPayment) {
+        this.monthlyPayment = monthlyPayment;
     }
 
     public double getInterest() {
