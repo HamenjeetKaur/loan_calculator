@@ -26,6 +26,8 @@ public class calculation {
         this.month = month;
     }
 
+
+
     public double getAmountOwed() {
         return amountOwed;
     }
