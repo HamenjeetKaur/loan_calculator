@@ -156,6 +156,7 @@ public class CalcuController {
 
 
             row.createCell(2).setCellFormula("(B1*(B3/12))/(1-(1+(B3/12))^(-10*12))");
+            row.getCell(2).setCellStyle(accountingStyle);
 
             row.createCell(3).setCellFormula(String.format("(B%d * B$3 * (1/12))", i + 7));
             row.getCell(3).setCellStyle(accountingStyle);
